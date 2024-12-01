@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #05275dbe;
+    color: #153396;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#theme-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #155396; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-btn:hover {
+    background-color: #1b49d2;
+    transform: scale(1.05);
+}
+
+#theme-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1d7add;
+    color: rgba(5,23,105,0.225);
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #0d60e66d;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #155396;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1b49d2;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.nav-button:hover {
+    background-color: #218bd6; 
+    transform: scale(1.05);
+    border-color: #0d60e6; 
+}
+
+.nav-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-button.active {
+    background-color: #05275d; 
+    border-color: #ff5733; 
+}
+
+.about-us {
+    padding: 40px 20px;
+    background-color: #f4f4f4; 
+    color: #333; 
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2rem;
+    color: #1b49d2; 
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.video-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#myVideo {
+    max-width: 100%;
+    border: 2px solid #218bd6;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.Computer h1 {
+    color: #e6eaf041;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Computer p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(5, 23, 105, 0.225);
+}
+
+table thead {
+    background-color: #01285b;
+    color: #FFD700;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #bdc2ce38;
+}
+
+table img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.price .original-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 5px;
+}
+
+.price .promotion-price {
+    color: rgb(227, 233, 241);
+    font-weight: bold;
+}
+
+.quantity {
+    width: 50px;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #0f7fa1; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #FF6F61; 
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.container input,
+.container textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.container input:focus,
+.container textarea:focus {
+    background-color: #eaeaea;
+    outline: none;
+}
+
+.container textarea {
+    resize: none;
+    height: 120px;
+}
+
+.container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #155396; 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background-color: #1b49d2; 
+    transform: scale(1.05);
+}
+
+.container button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Container Flex */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Details Section */
+.contact-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #0f7fa1;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #FF6F61;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing Form Styles (Reuse Existing) */
+.contact-form h2 {
+    text-align: center;
+    color: #155396;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #155396;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1b49d2;
+    transform: scale(1.05);
+}

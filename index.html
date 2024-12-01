@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradient Button with Shadow</title>
+        <link rel="stylesheet" href="teah_styles.css">
+    </head>
+
+    <body>
+        <div class="banner">
+            <img src="banner.jpeg">
+        </div>
+
+        <header>
+            <div class="brand-name">My Computer Accessories Shop</div>
+            <div class="header-actions">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button onclick="openSearchPage()">Search</button>
+            </div>
+        </header>
+
+        <nav class="nav-bar">
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#contact" class="nav-button">Contact Us</a>
+            <a href="#about" class="nav-button">About Us</a>
+       </nav>
+
+       <section id="about" class="about-us">
+        <h1>About Us</h1>
+        <p>
+            Welcome to My Computer Accessories Shop! We are passionate about providing the best quality computer accessories to enhance your computing experience. Our products include cutting-edge technology, ergonomic designs, and unbeatable prices to meet your needs.
+        </p>
+        <p>
+            Whether you are a gamer, a professional, or just someone who loves great gadgets, we are here for you. Thank you for choosing us!
+        </p>
+        </section>
+    
+        <div class="video-wrapper">
+            <video id="myVideo" width="600" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <main>
+            <section id="home" class="Computer">
+                <h1> Welcome To My Website</h1>
+                <p>Explore our shop and discover something amazing!</p>
+            </section>
+    
+            <h1>Checkout</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="pic1.jpeg">
+                            <div>
+                                <p>VXE DRAGONFLY</p>
+                                <label for="mouse-color">Color:</label>
+                                <select id="mouse-color" name="mouse-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM193.00</span> 
+                                <span class="promotion-price">RM105.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM105.00</td>
+                        </tr>
+                        </td>
+                    <tr>
+                        <td>
+                            <img src="pic2.jpeg">
+                            <div>
+                                <p>ASUS WT205</p>
+                                <label for="mouse-color">Color:</label>
+                                <select id="mouse-color" name="mouse-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM30.00</span> 
+                                <span class="promotion-price">RM22.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM22.00</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="pic4.jpeg">
+                            <div>
+                                <p>VERTICAL MOUSE</p>
+                                <label for="mouse-color-color">Color:</label>
+                                <select id="mouse-color" name="mouse-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM211.20</span> 
+                                <span class="promotion-price">RM101.60</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM101.60</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="pic3.jpeg">
+                            <div>
+                                <p>ATH-M50 XBT2 IB</p>
+                                <label for="headphone-color">Color:</label>
+                                <select id="headphone-color" name="headphone-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM2,000.00</span> 
+                                <span class="promotion-price">RM477.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM477.00</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="pic5.jpeg">
+                            <div>
+                                <p>ATH-M50 XBT2</p>
+                                <label for="headphone-color">Color:</label>
+                                <select id="headphone-color" name="headphone-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM2,001.00</span> 
+                                <span class="promotion-price">RM614.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM614.00</td>
+                        </td>
+                    </tr><tr>
+                        <td>
+                            <img src="pic9.jpeg">
+                            <div>
+                                <p>LOGITECH GPROX</p>
+                                <label for="headphone-color">Color:</label>
+                                <select id="headphone-color" name="headphone-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM1,099.00</span> 
+                                <span class="promotion-price">RM999.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM999.00</td>
+                        </td>
+                    </tr><tr>
+                        <td>
+                            <img src="pic7.jpeg">
+                            <div>
+                                <p>CORSAIR K70 MAX RGB</p>
+                                <label for="keyboard-color">Color:</label>
+                                <select id="keyboard-color" name="keyboard-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM1,099.00</span> 
+                                <span class="promotion-price">RM769.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM769.00</td>
+                        </td>
+                    </tr><tr>
+                        <td>
+                            <img src="pic8.jpeg">
+                            <div>
+                                <p>APX PRO MINI WIRLES</p>
+                                <label for="keyboard-color">Color:</label>
+                                <select id="keyboard-color" name="keyboard-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM1,359.00</span> 
+                                <span class="promotion-price">RM529.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM529.00</td>
+                        </td>
+                    </tr><tr>
+                        <td>
+                            <img src="pic6.jpeg">
+                            <div>
+                                <p>AMD Ryzen 7RTX 4070</p>
+                                <label for="cpu-color">Color:</label>
+                                <select id="cpu-color" name="cpu-color">
+                                <option value="light-blue">Light Blue</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                            </div>
+                            <td class="price">
+                                <span class="original-price">RM14,399.00</span> 
+                                <span class="promotion-price">RM899.00</span> 
+                            </td>
+                            <td><input type="number" class="quantity" value="1" min="0" onchange="updateTotal()"></td>
+                            <td class="total">RM899.00</td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+                        <td id="total-price">RM16,615.60</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div id="contact-section" class="contact-container">
+
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p><strong>Address:</strong> 123 Computer Street, Tech City</p>
+                    <p><strong>Email:</strong> support@accessoriesteahshop.com</p>
+                    <p><strong>Phone:</strong> +6011-3456789</p>
+                    <p>We are here to help! Reach out to us anytime.</p>
+                </div>
+            
+                <div class="contact-form">
+                    <form>
+                        <h2>Send Us a Message</h2>
+                        <input type="text" id="name" placeholder="Enter Your Name" required>
+                        <input type="email" id="email" placeholder="Enter Your Email" required>
+                        <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+                        <textarea id="message" rows="4" placeholder="Write Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+
+        <script>
+            function openSearchPage() {
+                const searchInput = document.querySelector(".search-bar").value.trim();
+                if (searchInput) {
+                    alert(`Searching for: ${searchInput}`);
+                } else {
+                    alert("Please enter a search term.");
+                }
+            }
+
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = button.getAttribute('href').substring(1); 
+                    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+
+            function updateTotal() {
+                const rows = document.querySelectorAll("table tbody tr");
+                let grandTotal = 0;
+
+                rows.forEach((row) => {
+                    const priceElement = row.querySelector(".promotion-price");
+                    const quantityElement = row.querySelector(".quantity");
+                    const totalElement = row.querySelector(".total");
+
+                    if (priceElement && quantityElement && totalElement) {
+                        const price = parseFloat(priceElement.textContent.replace("RM", ""));
+                        const quantity = parseInt(quantityElement.value, 10) || 0;
+                        const total = price * quantity;
+
+                        totalElement.textContent = `RM${total.toFixed(2)}`;
+                        grandTotal += total;
+                    }
+                });
+
+                document.getElementById("total-price").textContent = `RM${grandTotal.toFixed(2)}`;
+            }
+
+            document.querySelector("form").addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (!name || !email || !phone || !message) {
+                    alert("Please fill out all fields.");
+                    return;
+                }
+
+                alert("Form submitted successfully!");
+                e.target.reset(); 
+            });
+
+            function toggleTheme() {
+                const body = document.body;
+                body.classList.toggle("dark-theme");
+
+                const themeButton = document.getElementById("theme-btn");
+                if (body.classList.contains("dark-theme")) {
+                    themeButton.textContent = "Switch to Light Theme";
+                } else {
+                    themeButton.textContent = "Switch to Dark Theme";
+                }
+            }
+
+            function toggleVideoPlayback() {
+                const video = document.getElementById("myVideo");
+                const videoButton = document.getElementById("video-btn");
+
+                if (video.paused) {
+                    video.play();
+                    videoButton.textContent = "Pause Video";
+                } else {
+                    video.pause();
+                    videoButton.textContent = "Play Video";
+                }
+            }
+
+            function smoothScroll(targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                
+                const themeButton = document.createElement("button");
+                themeButton.id = "theme-btn";
+                themeButton.textContent = "Switch to Dark Theme";
+                themeButton.style.position = "fixed";
+                themeButton.style.top = "10px";
+                themeButton.style.right = "10px";
+                themeButton.style.padding = "10px";
+                themeButton.style.zIndex = "1000";
+                document.body.appendChild(themeButton);
+                themeButton.addEventListener("click", toggleTheme);
+
+                const videoButton = document.createElement("button");
+                videoButton.id = "video-btn";
+                videoButton.textContent = "Play Video";
+                videoButton.style.marginTop = "10px";
+                document.querySelector(".video-wrapper").appendChild(videoButton);
+                videoButton.addEventListener("click", toggleVideoPlayback);
+
+            });
+        </script>
+    <script src="main.js"></script>
+    </body>
+</html>
